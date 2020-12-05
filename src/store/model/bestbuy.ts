@@ -18,7 +18,7 @@ export const BestBuy: Store = {
 			model: 'test:model',
 			series: 'test:series',
 			url:
-				'https://www.bestbuy.com/site/evga-ko-ultra-gaming-nvidia-geforce-rtx-2060-6gb-gddr6-pci-express-3-0-graphics-card-black-gray/6403801.p?skuId=6403801&intl=nosplash'
+				'https://www.bestbuy.com/site/insignia-8qt-digital-multi-cooker-stainless-steel/6258941.p?skuId=6258941&intl=nosplash'
 		},
 		{
 			brand: 'nvidia',
@@ -27,6 +27,102 @@ export const BestBuy: Store = {
 			series: '3070',
 			url:
 				'https://www.bestbuy.com/site/nvidia-geforce-rtx-3070-8gb-gddr6-pci-express-4-0-graphics-card-dark-platinum-and-black/6429442.p?skuId=6429442&intl=nosplash'
+		},
+		{
+			brand: 'evga',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439300/cart',
+			model: 'xc3 black',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/evga-geforce-rtx-3070-xc3-black-gaming-8gb-gddr6x-pci-express-4-0-graphics-card/6439300.p?skuId=6439300&intl=nosplash'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6437912/cart',
+			model: 'eagle',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6437912.p?skuId=6437912&intl=nosplash'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6437909/cart',
+			model: 'gaming oc',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6437909.p?skuId=6437909&intl=nosplash'
+		},
+		{
+			brand: 'pny',
+			cartUrl: 'https://api.bestbuy.com/click/-/6432654/cart',
+			model: 'dual fan',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/pny-geforce-rtx-3070-8gb-dual-fan-graphics-card/6432654.p?skuId=6432654&intl=nosplash'
+		},
+		{
+			brand: 'pny',
+			cartUrl: 'https://api.bestbuy.com/click/-/6432653/cart',
+			model: 'xlr8 revel',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/pny-geforce-rtx-3070-8gb-xlr8-gaming-epic-x-rgb-triple-fan-graphics-card/6432653.p?skuId=6432653&intl=nosplash'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439384/cart',
+			model: 'aorus',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6439384.p?skuId=6439384'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439385/cart',
+			model: 'vision',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-white/6439385.p?skuId=6439385'
+		},
+		{
+			brand: 'asus',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439128/cart',
+			model: 'tuf',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/asus-tuf-rtx3070-8gb-gddr6-pci-express-4-0-graphics-card-black/6439128.p?skuId=6439128'
+		},
+		{
+			brand: 'msi',
+			cartUrl: 'https://api.bestbuy.com/click/-/6438278/cart',
+			model: 'ventus 3x oc',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/msi-geforce-rtx-3070-ventus-3x-oc-bv-8gb-gddr6-pci-express-4-0-graphics-card-black/6438278.p?skuId=6438278'
+		},
+		{
+			brand: 'asus',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439127/cart',
+			model: 'strix',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/asus-rog-strix-rtx3070-8gb-gddr6-pci-express-4-0-graphics-card-black/6439127.p?skuId=6439127'
+		},
+		{
+			brand: 'evga',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439301/cart',
+			model: 'ftw3 ultra',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/evga-geforce-rtx-3070-ftw3-ultra-gaming-8gb-gddr6x-pci-express-4-0-graphics-card/6439301.p?skuId=6439301'
+		},
+		{
+			brand: 'evga',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439299/cart',
+			model: 'xc3 ultra',
+			series: '3070',
+			url:
+				'https://www.bestbuy.com/site/evga-geforce-rtx-3070-xc3-ultra-gaming-8gb-gddr6x-pci-express-4-0-graphics-card/6439299.p?skuId=6439299'
 		},
 		{
 			brand: 'nvidia',
@@ -43,14 +139,6 @@ export const BestBuy: Store = {
 			series: '3080',
 			url:
 				'https://www.bestbuy.com/site/asus-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-strix-graphics-card-black/6432445.p?skuId=6432445&intl=nosplash'
-		},
-		{
-			brand: 'evga',
-			cartUrl: 'https://api.bestbuy.com/click/-/6439300/cart',
-			model: 'xc3 black',
-			series: '3070',
-			url:
-				'https://www.bestbuy.com/site/evga-geforce-rtx-3070-xc3-black-gaming-8gb-gddr6x-pci-express-4-0-graphics-card/6439300.p?skuId=6439300&intl=nosplash'
 		},
 		{
 			brand: 'evga',
@@ -94,22 +182,6 @@ export const BestBuy: Store = {
 		},
 		{
 			brand: 'gigabyte',
-			cartUrl: 'https://api.bestbuy.com/click/-/6437912/cart',
-			model: 'eagle',
-			series: '3070',
-			url:
-				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6437912.p?skuId=6437912&intl=nosplash'
-		},
-		{
-			brand: 'gigabyte',
-			cartUrl: 'https://api.bestbuy.com/click/-/6437909/cart',
-			model: 'gaming oc',
-			series: '3070',
-			url:
-				'https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6437909.p?skuId=6437909&intl=nosplash'
-		},
-		{
-			brand: 'gigabyte',
 			cartUrl: 'https://api.bestbuy.com/click/-/6430620/cart',
 			model: 'gaming oc',
 			series: '3080',
@@ -147,22 +219,6 @@ export const BestBuy: Store = {
 			series: '3080',
 			url:
 				'https://www.bestbuy.com/site/msi-geforce-rtx-3080-ventus-3x-10g-oc-bv-gddr6x-pci-express-4-0-graphic-card-black-silver/6430175.p?skuId=6430175&intl=nosplash'
-		},
-		{
-			brand: 'pny',
-			cartUrl: 'https://api.bestbuy.com/click/-/6432654/cart',
-			model: 'dual fan',
-			series: '3070',
-			url:
-				'https://www.bestbuy.com/site/pny-geforce-rtx-3070-8gb-dual-fan-graphics-card/6432654.p?skuId=6432654&intl=nosplash'
-		},
-		{
-			brand: 'pny',
-			cartUrl: 'https://api.bestbuy.com/click/-/6432653/cart',
-			model: 'xlr8 revel',
-			series: '3070',
-			url:
-				'https://www.bestbuy.com/site/pny-geforce-rtx-3070-8gb-xlr8-gaming-epic-x-rgb-triple-fan-graphics-card/6432653.p?skuId=6432653&intl=nosplash'
 		},
 		{
 			brand: 'pny',
@@ -321,6 +377,89 @@ export const BestBuy: Store = {
 			series: 'xboxss',
 			url:
 				'https://www.bestbuy.com/site/microsoft-xbox-series-s-512-gb-all-digital-console-disc-free-gaming-white/6430277.p?skuId=6430277'
+		},
+		{
+			brand: 'msi',
+			model: 'amd reference',
+			series: 'rx6800xt',
+			url:
+				'https://www.bestbuy.com/site/msi-radeon-rx-6800-xt-16g-16gb-gddr6-pci-express-4-0-graphics-card-black-black/6440913.p?skuId=6440913'
+		},
+		{
+			brand: 'msi',
+			model: 'amd reference',
+			series: 'rx6800',
+			url:
+				'https://www.bestbuy.com/site/msi-radeon-rx-6800-16g-16gb-gddr6-pci-express-4-0-graphics-card-black-black/6441020.p?skuId=6441020'
+		},
+		{
+			brand: 'xfx',
+			model: 'amd reference',
+			series: 'rx6800',
+			url:
+				'https://www.bestbuy.com/site/xfx-amd-radeon-rx-6800-16gb-gddr6-pci-express-4-0-gaming-graphics-card-black/6442077.p?skuId=6442077'
+		},
+		{
+			brand: 'xfx',
+			model: 'amd reference',
+			series: 'rx6800xt',
+			url:
+				'https://www.bestbuy.com/site/xfx-amd-radeon-rx-6800xt-16gb-gddr6-pci-express-4-0-gaming-graphics-card-black/6441226.p?skuId=6441226'
+		},
+		{
+			brand: 'xfx',
+			model: 'merc',
+			series: 'rx6800xt',
+			url:
+				'https://www.bestbuy.com/site/xfx-merc-319-amd-radeon-rx-6800xt-16gb-gddr6-pci-express-4-0-gaming-graphics-card-black/6442585.p?skuId=6442585'
+		},
+		{
+			brand: 'corsair',
+			cartUrl: 'https://api.bestbuy.com/click/-/6351845/cart',
+			model: '750 platinum',
+			series: 'sf',
+			url:
+				'https://www.bestbuy.com/site/corsair-sf-series-750w-atx12v-2-4-eps12v-2-92-sfx12v-80-plus-platinum-modular-power-supply-black/6351845.p?skuId=6351845'
+		},
+		{
+			brand: 'corsair',
+			cartUrl: 'https://api.bestbuy.com/click/-/6351844/cart',
+			model: '600 platinum',
+			series: 'sf',
+			url:
+				'https://www.bestbuy.com/site/corsair-sf-series-600w-atx12v-2-4-eps12v-2-92-sfx12v-80-plus-platinum-modular-power-supply-black/6351844.p?skuId=6351844'
+		},
+		{
+			brand: 'nvidia',
+			cartUrl: 'https://api.bestbuy.com/click/-/6439402/cart',
+			model: 'founders edition',
+			series: '3060ti',
+			url:
+				'https://www.bestbuy.com/site/nvidia-geforce-rtx-3060-ti-8gb-gddr6-pci-express-4-0-graphics-card-steel-and-black/6439402.p?skuId=6439402&intl=nosplash'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6442484/cart',
+			model: 'gaming oc',
+			series: '3060ti',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-gaming-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442484.p?skuId=6442484&intl=nosplash'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://api.bestbuy.com/click/-/6442485/cart',
+			model: 'eagle oc',
+			series: '3060ti',
+			url:
+				'https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-eagle-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442485.p?skuId=6442485&intl=nosplash'
+		},
+		{
+			brand: 'msi',
+			cartUrl: 'https://api.bestbuy.com/click/-/6441172/cart',
+			model: 'ventus 2x oc',
+			series: '3060ti',
+			url:
+				'https://www.bestbuy.com/site/msi-geforce-rtx-3060-ti-ventus-2x-oc-bv-8gb-gddr6-pci-express-4-0-graphics-card-black-black/6441172.p?skuId=6441172&intl=nosplash'
 		}
 	],
 	name: 'bestbuy'

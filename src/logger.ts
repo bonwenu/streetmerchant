@@ -118,6 +118,7 @@ export const Print = {
 
 		return `ℹ ${buildProductString(link, store)} :: IN STOCK, WAITING`;
 	},
+	// eslint-disable-next-line max-params
 	maxPrice(
 		link: Link,
 		store: Store,
@@ -179,6 +180,12 @@ export const Print = {
 		}
 
 		return `✖ ${buildProductString(link, store)} :: OUT OF STOCK`;
+	},
+	productInStock(link: Link): string {
+		let productString = `Product Page: ${link.url}`;
+		if (link.cartUrl) productString += `\nAdd To Cart Link: ${link.cartUrl}`;
+
+		return productString;
 	},
 	rateLimit(link: Link, store: Store, color?: boolean): string {
 		if (color) {

@@ -1,25 +1,14 @@
 import {startAPIServer, stopAPIServer} from './web';
 import {Browser} from 'puppeteer';
-import {adBlocker} from './adblocker';
 import {config} from './config';
 import {getSleepTime} from './util';
 import {logger} from './logger';
 import puppeteer from 'puppeteer-extra';
-import resourceBlock from 'puppeteer-extra-plugin-block-resources';
 import stealthPlugin from 'puppeteer-extra-plugin-stealth';
 import {storeList} from './store/model';
 import {tryLookupAndLoop} from './store';
 
 puppeteer.use(stealthPlugin());
-if (config.browser.lowBandwidth) {
-	puppeteer.use(
-		resourceBlock({
-			blockedTypes: new Set(['image', 'font'] as const)
-		})
-	);
-} else {
-	puppeteer.use(adBlocker);
-}
 
 let browser: Browser | undefined;
 
@@ -44,7 +33,7 @@ async function main() {
 	// Add the address of the proxy server if defined
 	if (config.proxy.address) {
 		args.push(
-			`--proxy-server=http://${config.proxy.address}:${config.proxy.port}`
+			`--proxy-server=${config.proxy.protocol}://${config.proxy.address}:${config.proxy.port}`
 		);
 	}
 
@@ -94,7 +83,7 @@ async function stopAndExit() {
 async function loopMain() {
 	try {
 		await main();
-	} catch (error) {
+	} catch (error: unknown) {
 		logger.error(
 			'✖ something bad happened, resetting streetmerchant in 5 seconds',
 			error

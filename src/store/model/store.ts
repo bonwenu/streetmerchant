@@ -13,7 +13,9 @@ export type Pricing = {
 export type Brand =
 	| 'test:brand'
 	| 'amd'
+	| 'asrock'
 	| 'asus'
+	| 'corsair'
 	| 'evga'
 	| 'gainward'
 	| 'gigabyte'
@@ -24,20 +26,28 @@ export type Brand =
 	| 'nvidia'
 	| 'palit'
 	| 'pny'
+	| 'sapphire'
 	| 'sony'
+	| 'xfx'
+	| 'powercolor'
 	| 'zotac';
 
 export type Series =
 	| 'test:series'
+	| '3060ti'
 	| '3070'
 	| '3080'
 	| '3090'
-	| 'ryzen5950'
-	| 'ryzen5900'
-	| 'ryzen5800'
+	| 'rx6800'
+	| 'rx6800xt'
+	| 'rx6900xt'
 	| 'ryzen5600'
+	| 'ryzen5800'
+	| 'ryzen5900'
+	| 'ryzen5950'
 	| 'sonyps5c'
 	| 'sonyps5de'
+	| 'sf'
 	| 'xboxsx'
 	| 'xboxss';
 
@@ -47,72 +57,89 @@ export type Model =
 	| '5800x'
 	| '5900x'
 	| '5950x'
+	| '600 platinum'
+	| '750 platinum'
+	| 'amd reference'
 	| 'amp extreme holo'
 	| 'amp holo'
-	| 'aorus'
 	| 'aorus master'
 	| 'aorus xtreme'
-	| 'dual'
+	| 'aorus'
+	| 'challenger'
 	| 'dual fan'
 	| 'dual oc'
-	| 'founders edition'
-	| 'ftw3'
-	| 'ftw3 ultra'
-	| 'eagle'
+	| 'dual'
 	| 'eagle oc'
-	| 'gaming'
+	| 'eagle'
+	| 'founders edition'
+	| 'ftw3 ultra'
+	| 'ftw3'
+	| 'gamerock oc'
 	| 'gaming oc'
+	| 'gaming oc pro'
+	| 'gaming pro oc'
+	| 'gaming pro'
+	| 'gaming x trio'
 	| 'gaming x3'
+	| 'gaming'
 	| 'ichill x2'
 	| 'ichill x3'
 	| 'ichill x4'
-	| 'gamerock oc'
-	| 'gaming x trio'
-	| 'gaming pro'
-	| 'gaming pro oc'
+	| 'ko'
+	| 'nitro+'
+	| 'nitro oc se'
+	| 'nitro oc'
+	| 'phantom gaming'
+	| 'phantom gs'
+	| 'phoenix gs oc'
+	| 'phoenix gs'
+	| 'phoenix'
 	| 'ps5 console'
 	| 'ps5 digital'
-	| 'phantom gs'
-	| 'phoenix'
-	| 'phoenix gs'
-	| 'phoenix gs oc'
-	| 'sg'
+	| 'pulse'
+	| 'red devil'
 	| 'sg oc'
-	| 'strix'
+	| 'sg'
+	| 'merc'
+	| 'strix lc'
 	| 'strix oc'
-	| 'trinity'
+	| 'strix'
+	| 'taichi'
 	| 'trinity oc'
-	| 'tuf'
+	| 'trinity'
 	| 'tuf oc'
+	| 'tuf'
 	| 'turbo'
-	| 'twin edge'
 	| 'twin edge oc'
-	| 'twin x2'
+	| 'twin edge'
 	| 'twin x2 oc'
+	| 'twin x2'
 	| 'uprising'
-	| 'ventus 2x'
 	| 'ventus 2x oc'
-	| 'ventus 3x'
+	| 'ventus 2x'
 	| 'ventus 3x oc'
-	| 'vision'
+	| 'ventus 3x'
 	| 'vision oc'
-	| 'xc3'
-	| 'xc3 black'
-	| 'xc3 ultra'
+	| 'vision'
 	| 'xbox series s'
 	| 'xbox series x'
+	| 'xc gaming'
+	| 'xc3 black'
+	| 'xc3 ultra'
+	| 'xc3'
 	| 'xlr8 revel'
 	| 'xlr8 uprising';
 
 export type Link = {
 	brand: Brand;
-	itemNumber?: string;
-	series: Series;
-	model: Model;
-	url: string;
 	cartUrl?: string;
+	itemNumber?: string;
+	labels?: Labels;
+	model: Model;
 	openCartAction?: (browser: Browser) => Promise<string>;
+	series: Series;
 	screenshot?: string;
+	url: string;
 };
 
 export type LabelQuery = Element[] | Element | string[];
@@ -156,4 +183,7 @@ export type Store = {
 	waitUntil?: LoadEvent;
 	minPageSleep?: number;
 	maxPageSleep?: number;
+
+	proxyList?: string[];
+	currentProxyIndex?: number;
 };

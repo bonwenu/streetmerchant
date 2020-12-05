@@ -60,7 +60,7 @@ export const Very: Store = {
 						url
 					});
 				} else {
-					logger.error(`Failed to parse card: ${title}`);
+					logger.error(`Failed to parse card: ${title}`, {url});
 				}
 			}
 
@@ -68,6 +68,11 @@ export const Very: Store = {
 		},
 		ttl: 300000,
 		urls: [
+			{
+				series: '3060ti',
+				url:
+					'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100'
+			},
 			{
 				series: '3070',
 				url:
